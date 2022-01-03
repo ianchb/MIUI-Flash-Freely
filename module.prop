@@ -1,6 +1,0 @@
-id=MIUI_Flash_Freely
-name=MIUI Flash Freely
-version=v2.1.0102
-versionCode=3
-author=siergtc @ cgtsoft.com
-description=By changing the "support_ota_validate" value in the device_features file of any available Xiaomi or Redmi phone running MIUI 12+ to "false", it is possible to freely select the .zip package in the System Update App and flash it, even the package is in alpha.
