@@ -5,7 +5,6 @@ CHECK="/product/etc
 for path in $CHECK; do
   if [[ -d $path/device_features ]]; then
     TARGET_PATH="$path/device_features"
-    sed -i 's/description=/description=[🥰]Working. This module is just right for you! /g' $MODDIR/module.prop
     break
   fi
 done
