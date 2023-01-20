@@ -1,7 +1,7 @@
 id=MIUI_Flash_Freely
 name=MIUI Flash Freely
-version=v4.1.0611
-versionCode=7
+version=v4.2.0120
+versionCode=8
 author=siergtc
-description=Only for V-A/B device. View https://github.com/ianchb/MIUI-Flash-Freely for more.
-updateJson=https://test.cgtsoft.com/mff_update
+description=View https://github.com/ianchb/MIUI-Flash-Freely for more.
+updateJson=https://update.ap.icu/mff
