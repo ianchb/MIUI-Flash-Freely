@@ -14,6 +14,4 @@ for path in $CHECK; do
 done
 if [[ $SUPPORT == "0" ]]; then
   abort "! Error: Unsupported device!"
-else
-  ui_print "- A reboot is needed to check the status."
 fi
