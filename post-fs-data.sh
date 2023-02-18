@@ -11,5 +11,11 @@ done
 CHANGE=$MODDIR/system/$TARGET_PATH
 mkdir -p $CHANGE
 rm $CHANGE/*
-cp -f $TARGET_PATH/* $CHANGE/
-sed -i 's/"support_ota_validate">true</"support_ota_validate">false</g' $CHANGE/*.xml
+if [ ! -f $MODDIR/../maodf.marker ]; then
+    cp -f $TARGET_PATH/* $CHANGE/
+    sed -i 's/"support_ota_validate">true</"support_ota_validate">false</g' $CHANGE/*.xml
+else
+    sed -i 's/"support_ota_validate">true</"support_ota_validate">false</g' $MODDIR/../MIUI_AOD_Freely/system/$TARGET_PATH/*.xml
+    cp -f $MODDIR/../MIUI_AOD_Freely/system/$TARGET_PATH/* $CHANGE/
+fi
+touch $MODDIR/../mff.marker
